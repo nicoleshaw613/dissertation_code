@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore psychology, key principles, history, and careers through an informative and fully responsive website.">
+    <meta name="author" content="Psychology Insights">
+    <title>Psychology and Psychological Principles</title>
+    <link rel="stylesheet" href="styles.css?v=123">
+</head>
+<body>
+    <div id="program-status">Python Program: Checking...</div>
+
+    <header>
+        <h1>Psychology and Psychological Principles</h1>
+        <p>Exploring the science of mind and behavior</p>
+    </header>
+
+    <div id="settings-popup" class="popup">
+        <div class="popup-content">
+            <h2>Customize Website Colors</h2>
+            <label for="primary-color">Primary Color:</label>
+            <input type="color" id="primary-color" name="primary-color" value="#03045e">
+            
+            <label for="secondary-color">Secondary Color:</label>
+            <input type="color" id="secondary-color" name="secondary-color" value="#f4f4f4">
+            
+            <label for="font-color">Font Color:</label>
+            <input type="color" id="font-color" name="font-color" value="#333">
+            
+            <button id="apply-colors">Apply</button>
+            <button id="close-settings">Close</button>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Psychology</a></li>
+            <li><a href="#principles">Key Principles</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#history">History of Psychology</a></li>
+            <li><a href="#careers">Careers in Psychology</a></li>
+            <li><a href="#aboutproject">About this Project</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <button id="settings-button">Customise</button>
+
+        <div id="breathe-bubble" class="bubble"></div>
+
+        <div id="settings-panel" style="display:none; position:fixed; top:20%; right:20px; background:#fff; padding:20px; border:1px solid #ccc; z-index:1000; width:250px;">
+        <h3>Customize Theme</h3>
+            
+            <label>Background Color:<br/>
+                <input type="color" id="bg-color-picker" value="#ffffff" />
+            </label><br/><br/>
+            
+            <label>Text Color:<br/>
+                <input type="color" id="text-color-picker" value="#000000" />
+            </label><br/><br/>
+            
+            <label>Accent Color:<br/>
+                <input type="color" id="accent-color-picker" value="#007bff" />
+            </label><br/><br/>
+            
+            <button id="apply-theme">Apply</button>
+            <button id="close-settings">Close</button>
+        </div>
+        <section class="section" id="about">
+            <h2>About Psychology</h2>
+            <p>Psychology is the scientific study of the mind and behavior. It seeks to understand individuals and groups through research and applied knowledge. The field covers various areas including developmental, cognitive, and social psychology.</p>
+        </section>
+
+        <section class="section" id="principles">
+            <h2>Key Psychological Principles</h2>
+            <ul>
+                <li><strong>Cognitive Development:</strong> The process of acquiring knowledge through thought, experience, and senses.</li>
+                <li><strong>Behaviorism:</strong> A theory that focuses on observable behaviors and the ways they're influenced by stimuli.</li>
+                <li><strong>Emotional Intelligence:</strong> The ability to recognize, understand, and manage emotions effectively.</li>
+                <li><strong>Maslow's Hierarchy of Needs:</strong> A motivational theory proposing that individuals strive to meet basic needs before moving on to higher-level aspirations.</li>
+            </ul>
+
+            <h3>Psychological Insights:</h3>
+            <p>Emotion recognition is closely tied to psychology, as facial expressions and voice tone are key indicators of how individuals feel. For example:</p>
+            <ul>
+                <li>Anger can be detected through raised voices and tightened facial muscles.</li>
+                <li>Happiness is often reflected in smiles and a cheerful tone of voice.</li>
+                <li>Frustration may appear in furrowed brows and tense vocal tones.</li>
+            </ul>
+            <p>These observations are rooted in psychological theories about how humans express and process emotions. Recognizing these patterns is essential in creating user-friendly and empathetic systems.</p>
+        </section>
+
+        <section class="section" id="applications">
+            <h2>Applications of Psychology</h2>
+            <ul>
+                <li><strong>Education:</strong> Enhancing learning techniques and addressing student needs.</li>
+                <li><strong>Healthcare:</strong> Managing mental health and improving patient care.</li>
+                <li><strong>Workplace:</strong> Boosting productivity and employee satisfaction through organizational psychology.</li>
+                <li><strong>Everyday Life:</strong> Improving communication, relationships, and personal growth.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="history">
+            <h2>History of Psychology</h2>
+            <p>Psychology has its roots in ancient philosophy, with thinkers such as Aristotle and Plato exploring the nature of the mind. The formal scientific discipline of psychology emerged in the late 19th century with Wilhelm Wundt, who established the first experimental psychology lab in 1879. Over the decades, psychology has evolved to include numerous perspectives and methods, from Freudian psychoanalysis to contemporary cognitive neuroscience.</p>
+        </section>
+
+        <section class="section" id="careers">
+            <h2>Careers in Psychology</h2>
+            <p>Psychology offers diverse career paths, including clinical psychology, counseling, research, forensic psychology, organizational psychology, and educational psychology. Professionals in these fields work to understand human behavior and apply this knowledge to improve mental health, workplace environments, educational settings, and societal well-being.</p>
+        </section>
+
+        <section class="section" id="aboutproject">
+            <h2>About This Project</h2>
+            <p>This interface detects emotions in real-time using facial expressions and voice tone analysis. By analyzing emotions such as anger, happiness, sadness, and more, it provides insights into user behavior and interactions. This project integrates psychological principles with human-computer interaction, ensuring accessibility and compatibility with W3C standards.</p>
+        </section>
+
+        <div id="quiz">
+            <h3>Test Your Knowledge</h3>
+            <p>Take this short quiz to test your understanding of the psychological aspects of emotion recognition!</p>
+            <form id="quiz-form">
+                <label>
+                    1. What is one way anger can be detected?
+                    <select id="q1">
+                        <option value="smiling">Smiling</option>
+                        <option value="Tightened facial muscles">Tightened facial muscles</option>
+                        <option value="whispering">Whispering</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    2. What does frustration often appear as in facial expressions?
+                    <select id="q2">
+                        <option value="Furrowed brows">Furrowed brows</option>
+                        <option value="cheerful-tone">Cheerful tone</option>
+                        <option value="raised-eyebrows">Raised eyebrows</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    3. Why is recognizing emotional patterns important in systems?
+                    <select id="q3">
+                        <option value="entertainment">To entertain users</option>
+                        <option value="random">No specific reason</option>
+                        <option value="To create user-friendly and empathetic systems">To create user-friendly and empathetic systems</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    4. What is psychology mostly about?
+                    <select id="q4">
+                        <option value="Drawing pictures">Drawing pictures</option>
+                        <option value="Understanding how people think and feel">Understanding how people think and feel</option>
+                        <option value="Making money">Making money</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    5. Why is it helpful for the website to know your emotions?
+                    <select id="q5">
+                        <option value="To speed up loading times">To speed up loading times</option>
+                        <option value="To make the experience more personal and friendly">To make the experience more personal and friendly</option>
+                        <option value="To play games with you">To play games with you</option>
+                    </select>
+                </label>
+                <br><br>
+                <button type="button" id="submit-quiz-btn">Submit Answers</button>
+            </form>
+            <p id="quiz-result" style="margin-top: 10px; color: var(--font-color);"></p>
+        </div>
+
+        <br>
+        <button onclick="downloadMoodLog('json')">Download JSON</button>
+        <button onclick="downloadMoodLog('csv')">Download CSV</button>
+
+        <div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:2rem; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); z-index:9999; text-align:center;">
+            <button id="popup-close" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+            <button id="popup-button">OK</button>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Nicole Shaw. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js?v=20250318"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <canvas id="moodChart" width="400" height="200"></canvas>
+</body>
+</html>

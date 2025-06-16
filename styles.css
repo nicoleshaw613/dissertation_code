@@ -1,0 +1,228 @@
+/* Root variables */
+:root {
+    --primary-color: #03045e;
+    --secondary-color: #f4f4f4;
+    --font-color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: var(--hover-color);
+}
+
+#submit-quiz-btn {
+    display: block; 
+    visibility: visible;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#quiz-form, #quiz {
+    display: block;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 5spx;
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#settings-popup {
+    display: none;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    width: 350px;
+    text-align: center;
+}
+
+.quiz {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: white;
+}
+.quiz h3 {
+    color: var(--primary-color);
+}
+.quiz button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    margin: 100px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.emotion-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+}
+
+#feedback-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+#popup {
+  transition: opacity 0.3s ease;
+  max-width: 400px;
+  font-family: sans-serif;
+}
+#popup-button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: var(--primary-color, #3498db);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#popup-button:hover {
+  background-color: var(--hover-color, #2980b9);
+}
+
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#popup-close:hover {
+  color: red;
+}
+#breathe-bubble {
+  width: 100px;
+  height: 100px;
+  background-color: #00aaff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 1.5s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  pointer-events: none; 
+  z-index: 1000;
+}
+
+#breathe-bubble.show {
+  opacity: 1;
+  animation: breatheAnimation 3s ease-in-out infinite;
+}
+
+@keyframes breatheAnimation {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
